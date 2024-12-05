@@ -1,0 +1,70 @@
+Plugin Name: WP Defender
+Author: WPMU DEV
+Tested up to: 6.6.2
+
+Change Log:
+
+= 4.10.1 ( 2024-10-03 ) =
+
+- Fix: Optimize XML-RPC traffic management
+
+= 4.10.0 ( 2024-10-01 ) =
+
+- Enhance: Update malware signatures to detect different infected files
+- Enhance: Display notice on the Malware Scanning page if a file is missing or unreadable
+- Enhance: Defender > Recommendations > Disable XML-RPC syncs with Hosting XML-RPC Protection
+- Enhance: Improvements in deleting and exporting IPs
+- Enhance: Translation improvements
+- Fix: False positive in Malware Scanning for Toolset plugin
+- Fix: Defender does not recognize phishing code
+- Fix: Malware Scanning gets stuck on fresh multisite
+- Fix: Text content not displayed in the Services upsell on the Malware Scanning page
+- Fix: Security keys not getting updated
+- Fix: Malware Scanning detects the old plugin file as modified
+- Fix: 404 Detection > Duration Unit disappears when changing the Firewall logs count to 100
+
+= 4.9.0 ( 2024-09-02 ) =
+
+- New: Smart IP Detection method
+- Enhance: Improved error handling of Malware Scan during checksum
+- Enhance: Improved scan logic to detect plugins from wp.org
+- Enhance: Mention Defender in Cloudflare and X-Forwarded-For IP detection notices
+- Enhance: Usage Tracking improvements
+- Fix: Google reCAPTCHA verification failure on WooCommerce my-account and checkout pages
+- Fix: Google reCAPTCHA V3 error in the console log
+- Fix: 2FA settings issue in WooCommerce
+- Fix: Issues when uploading Config
+- Fix: Getting 'ERROR: Something went wrong' when registering a new authenticator
+- Fix: Copy error in translations
+- Fix: Undefined array key in Audit logs
+- Fix: Foreign key getting duplicated
+- Fix: Broken error notice design in 2FA methods
+
+= 4.8.2 ( 2024-07-31 ) =
+
+- Fix: Incorrect IP header detection on WPMU DEV hosting
+- Fix: Malware Scanning is not working for specific timezones
+- Fix: Can not set notification schedule after changing the site language
+- Fix: Quarantine feature improvements
+
+= 4.8.1 ( 2024-07-23 ) =
+
+- Enhance: Improvements for Known vulnerabilities
+- Fix: Multiple redirects when Mask Login Redirect Traffic is set to custom/external URL
+
+= 4.8.0 ( 2024-07-15 ) =
+
+- Enhance: Compatibility with WordPress 6.6
+- Enhance: WPCS compliance
+- Fix: Editors can't close Cloudflare Usage notification
+
+= 4.7.4 ( 2024-06-27 ) =
+
+- Fix: Hide Expert Services when Whitelabel is enabled
+
+= 4.7.3 ( 2024-06-27 ) =
+
+- Fix: Broken Access Control vulnerability on the Configs page
+
+
+1195767-1729774398-au
