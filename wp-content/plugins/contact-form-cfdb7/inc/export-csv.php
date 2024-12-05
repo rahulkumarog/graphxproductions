@@ -19,13 +19,8 @@ class CFDB7_Export_CSV{
         header("Cache-Control: max-age=0, no-cache, must-revalidate, proxy-revalidate");
         header("Last-Modified: {$now} GMT");
 		
-        // force download
-		header("Content-Description: File Transfer");
-		header("Content-Encoding: UTF-8");
-		header("Content-Type: text/csv; charset=UTF-8");
-        header("Content-Type: application/force-download");
-        header("Content-Type: application/octet-stream");
-        header("Content-Type: application/download");
+        header("Content-Type: text/csv; charset=UTF-8");
+        header("Content-Disposition: attachment;filename={$filename}");
 
         // disposition / encoding on response body
 		header("Content-Disposition: attachment;filename={$filename}");
@@ -46,7 +41,7 @@ class CFDB7_Export_CSV{
         $array_keys = array_keys($array);
         $heading    = array();
         $unwanted   = array('cfdb7_file', 'cfdb7_', 'your-');
-        $delimiter  = apply_filters('cfdb7_csv_delimiter', ';');
+        $delimiter  = apply_filters('cfdb7_csv_delimiter', ',');
 
         foreach ( $array_keys as $aKeys ) {
             if( $aKeys == 'form_date' ) $aKeys = 'Date';
